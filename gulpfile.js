@@ -31,23 +31,18 @@ gulp.task('browser-sync-test', function() {
 gulp.task('minify-css', () => {
   return gulp.src('./src/css/*.css')
     .pipe(cleanCSS({ compatibility: 'ie8' }))
-    // .pipe(rename({
-    //   suffix: '.min',
-    // }))
     .pipe(gulp.dest('./dist/css/'));
 });
 
 
 gulp.task('minify-js', () => {
   gulp.src('./src/js/script.js')
-    .pipe(minify({
-      mangle: {
-        keepClassName: true,
+    .pipe(minify(
+      {},
+      {
+        minifyPreset: '@babel/env',
       },
-    }))
-    // .pipe(rename({
-    //   suffix: '.min',
-    // }))
+    ))
     .pipe(gulp.dest('./dist/js/'));
 });
 
