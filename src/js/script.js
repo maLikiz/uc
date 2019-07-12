@@ -8,15 +8,55 @@ window.onload = function() {
     return document.querySelectorAll(query);
   }
 
+  let isAnimated = null;
+
   /* Unit functions */
   function toggleExpand(element) {
-    let display = 'block';
+    if (!isAnimated) {
+      isAnimated = true;
 
-    if (element.style.display === 'block') {
-      display = 'none';
+      const duration = 300;
+
+      if (element.style.display === 'block') {
+        element.style.height = `${element.offsetHeight}px`;
+        element.style.overflow = 'hidden';
+        element.style.transition = `${duration}ms`;
+        element.style.opacity = 1;
+
+        setTimeout(function() {
+          element.style.opacity = 0;
+          element.style.height = 0;
+        }, 10);
+
+        setTimeout(function() {
+          element.style = null;
+          element.style.display = 'none';
+          isAnimated = false;
+        }, duration);
+      } else {
+        element.style.opacity = 0;
+        element.style.display = 'block';
+
+        setTimeout(function() {
+          const height = element.offsetHeight;
+          element.style.opacity = 1;
+
+          element.style.height = 0;
+          element.style.transition = `${duration}ms`;
+
+          setTimeout(function() {
+            element.style.overflow = 'hidden';
+            element.style.height = `${height}px`;
+          }, 10);
+        }, 10);
+
+        timeout = setTimeout(function() {
+          element.style = null;
+          element.style.display = 'block';
+          isAnimated = false;
+        }, duration);
+      }
     }
-
-    element.style.display = display;
   }
 
   /* Elements */
