@@ -40,7 +40,7 @@ gulp.task('minify-js', () => {
     .pipe(minify(
       {},
       {
-        minifyPreset: '@babel/env',
+        presets: '@babel/preset-env',
       },
     ))
     .pipe(gulp.dest('./dist/js/'));
