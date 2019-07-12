@@ -73,7 +73,6 @@ h1, h2 {
   width: 262px;
   height: 52px;
   background-image: url(/img/btn2.png);
-  color: #fff;
   font-family: Roboto, sans-serif;
   font-size: 18px;
   color: #fff;
@@ -472,8 +471,7 @@ ul {
 
 .content {
   max-width: 1200px;
-  margin: 0 auto;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
   color: #94c2ed;
 }
 
@@ -482,9 +480,8 @@ ul {
   max-width: 1200px;
   display: inline-block;
   vertical-align: top;
-  margin: 0 auto;
   text-align: center;
-  margin-left: 0;
+  margin: 0 auto 0 0;
 }
 
 .games ul, .top_nav ul, .socials ul, .nav_games_wrapper ul {
@@ -499,7 +496,6 @@ ul {
   width: 212px;
   height: 160px;
   background-image: url(/img/bg-game.png);
-  margin: 0 auto;
   display: inline-block;
   margin: 24px 12px 0;
 }
@@ -600,8 +596,7 @@ ul {
 .about_wrapper {
   max-width: 1398px;
   background-size: cover;
-  margin: 0 auto;
-  margin-top: -60px;
+  margin: -60px auto 0;
   padding-top: 30px;
 }
 
@@ -814,8 +809,6 @@ ul {
 
   .top_nav li span {
     background: url(/img/bg-top-nav.png) center 0 no-repeat;
-    border: none;
-    box-shadow: none;
     width: 100%;
     margin: 2px 0;
     border-radius: 5px;
@@ -831,7 +824,6 @@ ul {
     width: 38px;
     height: 40px;
     position: absolute;
-    z-index: 9;
     top: 7px;
     right: 7px;
     cursor: pointer;
@@ -947,9 +939,6 @@ ul {
   }
 
   .nav_games li span {
-    background: url(/img/bg-top-nav.png) center 0 no-repeat;
-    border: none;
-    box-shadow: none;
     width: 100%;
     margin: 2px 0;
     border-radius: 5px;
@@ -1053,10 +1042,6 @@ ul {
 @media all and (max-width: 480px) {
   .logo {
     width: 320px;
-    background-position: center top;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 320px;
     margin-top: -12px;
   }
 
@@ -1124,8 +1109,6 @@ ul {
 .nav_games_wrapper li {
   display: inline-block;
   text-align: center;
-  display: inline-block;
-  text-align: center;
   width: 12.5%;
 }
 
@@ -1152,74 +1135,47 @@ ul {
   box-shadow: none;
 }
 
-.icon1 {
-  background: url(/img/games1.png) no-repeat center;
+.nav_games li i {
   background-size: cover;
   vertical-align: middle;
   display: inline-block;
   width: 24px;
   height: 24px;
+  background: no-repeat center;
+}
+
+.nav_games li .icon1 {
+  background-image: url(/img/games1.png);
   margin: -3px 5px 0 0;
 }
 
-.icon2 {
-  background: url(/img/games2.png) no-repeat center;
-  background-size: cover;
-  vertical-align: middle;
-  display: inline-block;
-  width: 24px;
-  height: 24px;
+.nav_games li .icon2 {
+  background-image: url(/img/games2.png);
   margin: -3px 3px 0 0;
 }
 
-.icon3 {
-  background: url(/img/games3.png) no-repeat center;
-  background-size: cover;
-  vertical-align: middle;
-  display: inline-block;
-  width: 24px;
-  height: 24px;
+.nav_games li .icon3 {
+  background-image: url(/img/games3.png);
   margin: -3px 5px 0 0;
 }
 
-.icon4 {
-  background: url(/img/games4.png) no-repeat center;
-  background-size: cover;
-  vertical-align: middle;
-  display: inline-block;
-  width: 24px;
-  height: 24px;
+.nav_games li .icon4 {
+  background-image: url(/img/games4.png);
   margin: -3px 5px 0 0;
 }
 
-.icon5 {
-  background: url(/img/games5.png) no-repeat center;
-  background-size: cover;
-  vertical-align: middle;
-  display: inline-block;
-  width: 24px;
-  height: 24px;
+.nav_games li .icon5 {
+  background-image: url(/img/games5.png);
   margin: -3px 5px 0 0;
 }
 
-.icon6 {
-  background: url(/img/games6.png) no-repeat center;
-  background-size: cover;
-  vertical-align: middle;
-  display: inline-block;
-  width: 24px;
-  height: 24px;
+.nav_games li .icon6 {
+  background-image: url(/img/games6.png);
   margin: -3px 5px 0 0;
 }
 
 .icon7 {
-  background: url(/img/games7.png) no-repeat center;
-  background-size: cover;
-  vertical-align: middle;
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  margin: -3px 3px 0 0;
+  background-image: url(/img/games7.png);
 }
 
 .footer_wrapper .maxwidth {
@@ -1279,7 +1235,6 @@ ul {
   justify-content: space-between;
   width: 100%;
   max-width: 460px;
-  display: flex;
   float: right;
 }
 
@@ -1290,57 +1245,11 @@ ul {
   cursor: pointer;
 }
 
-.licenses .license-item.pic1 {
-  background: url(/img/icons/18.png);
+.licenses .license-item {
   background-position: top center;
 }
 
-.licenses .license-item.pic2 {
-  background: url(/img/icons/egaming.png);
-  background-position: top center;
-}
-
-.licenses .license-item.pic3 {
-  background: url(/img/icons/gamcare.png);
-  background-position: top center;
-}
-
-.licenses .license-item.pic4 {
-  background: url(/img/icons/cfg.png);
-  background-position: top center;
-}
-
-.licenses .license-item.pic5 {
-  background: url(/img/icons/gpwa.png);
-  background-position: top center;
-}
-
-.licenses .license-item.pic6 {
-  background: url(/img/icons/md5.png);
-  background-position: top center;
-}
-
-.licenses .license-item.pic1:hover {
-  background-position: top -57px center;
-}
-
-.licenses .license-item.pic2:hover {
-  background-position: top -57px center;
-}
-
-.licenses .license-item.pic3:hover {
-  background-position: top -57px center;
-}
-
-.licenses .license-item.pic4:hover {
-  background-position: top -57px center;
-}
-
-.licenses .license-item.pic5:hover {
-  background-position: top -57px center;
-}
-
-.licenses .license-item.pic6:hover {
+.licenses .license-item:hover {
   background-position: top -57px center;
 }
 
@@ -1352,187 +1261,11 @@ ul {
   cursor: pointer;
 }
 
-.partners .partner_item.pic1 {
-  background: url(/img/icons/brand_ne.png);
+.partners .partner_item {
   background-position: top center;
 }
 
-.partners .partner_item.pic2 {
-  background: url(/img/icons/brand_en.png);
-  background-position: top center;
-}
-
-.partners .partner_item.pic3 {
-  background: url(/img/icons/brand_pl.png);
-  background-position: top center;
-}
-
-.partners .partner_item.pic4 {
-  background: url(/img/icons/brand_ng.png);
-  background-position: top center;
-}
-
-.partners .partner_item.pic5 {
-  background: url(/img/icons/brand_th.png);
-  background-position: top center;
-}
-
-.partners .partner_item.pic6 {
-  background: url(/img/icons/brand_vg.png);
-  background-position: top center;
-}
-
-.partners .partner_item.pic7 {
-  background: url(/img/icons/brand_ig.png);
-  background-position: top center;
-}
-
-.partners .partner_item.pic8 {
-  background: url(/img/icons/brand_am.png);
-  background-position: top center;
-}
-
-.partners .partner_item.pic9 {
-  background: url(/img/icons/brand_ps.png);
-  background-position: top center;
-}
-
-.partners .partner_item.pic10 {
-  background: url(/img/icons/brand_ar.png);
-  background-position: top center;
-}
-
-.partners .partner_item.pic11 {
-  background: url(/img/icons/brand_eg.png);
-  background-position: top center;
-}
-
-.partners .partner_item.pic12 {
-  background: url(/img/icons/brand_it.png);
-  background-position: top center;
-}
-
-.partners .partner_item.pic13 {
-  background: url(/img/icons/pay_vi.png);
-  background-position: top center;
-}
-
-.partners .partner_item.pic14 {
-  background: url(/img/icons/pay_mc.png);
-  background-position: top center;
-}
-
-.partners .partner_item.pic15 {
-  background: url(/img/icons/pay_qi.png);
-  background-position: top center;
-}
-
-.partners .partner_item.pic16 {
-  background: url(/img/icons/pay_yd.png);
-  background-position: top center;
-}
-
-.partners .partner_item.pic17 {
-  background: url(/img/icons/pay_pa.png);
-  background-position: top center;
-}
-
-.partners .partner_item.pic18 {
-  background: url(/img/icons/pay_pm.png);
-  background-position: top center;
-}
-
-.partners .partner_item.pic19 {
-  background: url(/img/icons/pay_t2.png);
-  background-position: top center;
-}
-
-.partners .partner_item.pic20 {
-  background: url(/img/icons/pay_mt.png);
-  background-position: top center;
-}
-
-.partners .partner_item.pic21 {
-  background: url(/img/icons/pay_me.png);
-  background-position: top center;
-}
-
-.partners .partner_item.pic22 {
-  background: url(/img/icons/pay_be.png);
-  background-position: top center;
-}
-
-.partners .partner_item.pic23 {
-  background: url(/img/icons/pay_24.png);
-  background-position: top center;
-}
-
-.partners .partner_item.pic24 {
-  background: url(/img/icons/pay_ab.png);
-  background-position: top center;
-}
-
-.partners .partner_item.pic25 {
-  background: url(/img/icons/pay_wm.png);
-  background-position: top center;
-}
-
-.partners .partner_item.pic26 {
-  background: url(/img/icons/pay_bi.png);
-  background-position: top center;
-}
-
-.partners .partner_item.pic27 {
-  background: url(/img/icons/pay_nm.png);
-  background-position: top center;
-}
-
-.partners .partner_item.pic28 {
-  background: url(/img/icons/pay_av.png);
-  background-position: top center;
-}
-
-.partners .partner_item.pic29 {
-  background: url(/img/icons/pay_ex.png);
-  background-position: top center;
-}
-
-.partners .partner_item.pic30 {
-  background: url(/img/icons/pay_pi.png);
-  background-position: top center;
-}
-
-.partners .partner_item.pic31 {
-  background: url(/img/icons/brand_mg.png);
-  background-position: top center;
-}
-
-.partners .partner_item.pic32 {
-  background: url(/img/icons/brand_qs.png);
-  background-position: top center;
-}
-
-.partners .partner_item.pic33 {
-  background: url(/img/icons/brand_wd.png);
-  background-position: top center;
-}
-
-.partners .partner_item.pic34 {
-  background: url(/img/icons/brand_sp.png);
-  background-position: top center;
-}
-
-.partners .partner_item.pic35 {
-  background: url(/img/icons/brand_ag.png);
-  background-position: top center;
-}
-
-.partners .partner_item.pic36 {
-  background: url(/img/icons/brand_pn.png);
-  background-position: top center;
-}
-
-.partners .partner_item.pic1:hover, .partners .partner_item.pic2:hover, .partners .partner_item.pic3:hover, .partners .partner_item.pic4:hover, .partners .partner_item.pic5:hover, .partners .partner_item.pic6:hover, .partners .partner_item.pic7:hover, .partners .partner_item.pic8:hover, .partners .partner_item.pic9:hover, .partners .partner_item.pic10:hover, .partners .partner_item.pic11:hover, .partners .partner_item.pic12:hover, .partners .partner_item.pic13:hover, .partners .partner_item.pic14:hover, .partners .partner_item.pic15:hover, .partners .partner_item.pic16:hover, .partners .partner_item.pic17:hover, .partners .partner_item.pic18:hover, .partners .partner_item.pic19:hover, .partners .partner_item.pic20:hover, .partners .partner_item.pic21:hover, .partners .partner_item.pic22:hover, .partners .partner_item.pic23:hover, .partners .partner_item.pic24:hover, .partners .partner_item.pic25:hover, .partners .partner_item.pic26:hover, .partners .partner_item.pic27:hover, .partners .partner_item.pic28:hover, .partners .partner_item.pic29:hover, .partners .partner_item.pic30:hover, .partners .partner_item.pic31:hover, .partners .partner_item.pic32:hover, .partners .partner_item.pic33:hover, .partners .partner_item.pic34:hover, .partners .partner_item.pic35:hover, .partners .partner_item.pic36:hover {
+.partners .partner_item:hover {
   background-position: top -47px center;
 }
 
